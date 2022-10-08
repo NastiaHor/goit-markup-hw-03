@@ -23,12 +23,12 @@
 
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header-container">
         <nav class="nav-box">
           <a href="./index.html" lang="en" class="logo link"
             >Web<span class="logo-part">Studio</span></a
           >
-          <ul class="list">
+          <ul class="list header-list">
             <li>
               <a href="./index.html" class="link nav-list current">Студія</a>
             </li>
@@ -39,12 +39,12 @@
           </ul>
         </nav>
         <ul class="list nav-contacts">
-          <li>
+          <li class="">
             <a href="mailto:info@devstudio.com" class="link nav-link"
               >info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="">
             <a href="tel:+380961111111" class="link nav-link"
               >+38 096 111 11 11</a
             >
@@ -61,31 +61,31 @@
         </div>
       </section>
 
-      <section>
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
-          <ul class="list">
-            <li>
+          <ul class="list benefits-list">
+            <li class="benefits-item">
               <h3 class="benefits-title">Увага до деталей</h3>
               <p class="benefits-p">
                 Ідейні міркування, і навіть початок повсякденної роботи з
                 формування позиції.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-title">Пунктуальність</h3>
               <p class="benefits-p">
                 Завдання організації, особливо рамки і місце навчання кадрів
                 тягне у себе.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-title">Планування</h3>
               <p class="benefits-p">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li>
+            <li class="benefits-item">
               <h3 class="benefits-title">Сучасні технології</h3>
               <p class="benefits-p">
                 Значимість цих проблем настільки очевидна, що реалізація
@@ -96,10 +96,10 @@
         </div>
       </section>
 
-      <section>
+      <section class="section section-what-do-we-do">
         <div class="container">
           <h2 class="what-do-we-do-h">Чим ми займаємося</h2>
-          <ul class="list">
+          <ul class="list container-what-do-we-do">
             <li>
               <img
                 src="./images/what-do-we-do-1.jpg"
@@ -128,10 +128,10 @@
         </div>
       </section>
 
-      <section class="our-team">
+      <section class="section our-team">
         <div class="container">
           <h2 class="our-team-h2">Наша команда</h2>
-          <ul class="list">
+          <ul class="list our-team-list">
             <li class="our-team-box">
               <img
                 src="./images/our-team-1.jpg"
@@ -139,8 +139,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-h3">Ігор Дем'яненко</h3>
-              <p lang="en" class="our-team-p">Product Designer</p>
+              <div class="our-team-box-part">
+                <h3 class="our-team-h3">Ігор Дем'яненко</h3>
+                <p lang="en" class="our-team-p">Product Designer</p>
+              </div>
             </li>
             <li class="our-team-box">
               <img
@@ -149,8 +151,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-h3">Ольга Рєпіна</h3>
-              <p lang="en" class="our-team-p">Frontend Developer</p>
+              <div class="our-team-box-part">
+                <h3 class="our-team-h3">Ольга Рєпіна</h3>
+                <p lang="en" class="our-team-p">Frontend Developer</p>
+              </div>
             </li>
             <li class="our-team-box">
               <img
@@ -159,8 +163,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-h3">Микола Тарасов</h3>
-              <p lang="en" class="our-team-p">Marketing</p>
+              <div class="our-team-box-part">
+                <h3 class="our-team-h3">Микола Тарасов</h3>
+                <p lang="en" class="our-team-p">Marketing</p>
+              </div>
             </li>
             <li class="our-team-box">
               <img
@@ -169,8 +175,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="our-team-h3">Михайло Єрмаков</h3>
-              <p lang="en" class="our-team-p">UI Designer</p>
+              <div class="our-team-box-part">
+                <h3 class="our-team-h3">Михайло Єрмаков</h3>
+                <p lang="en" class="our-team-p">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -179,7 +187,7 @@
 
     <footer class="footer-box">
       <div class="container">
-        <a href="./index.html" lang="en" class="logo link"
+        <a href="./index.html" lang="en" class="logo-footer link"
           >Web<span class="logo-part-footer">Studio</span></a
         >
         <address class="address-box">
@@ -199,7 +207,7 @@
               >
             </li>
             <li>
-              <a href="tel:+380961111111" class="link adress-inf"
+              <a href="tel:+380961111111" class="link adress-inf footer-tel"
                 >+38 096 111 11 11</a
               >
             </li>
