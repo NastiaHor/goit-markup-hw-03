@@ -9,6 +9,7 @@
     --color-grey-our-team: #F5F4FA;
     --color-grey-address: rgba(255, 255, 255, 0.6);
     --color-grey-border: #ECECEC;
+    --color-grey-portfolio-border: #EEEEEE;
 }
 
 p,
@@ -40,8 +41,7 @@ img {
 body {
     font-family: "Roboto", sans-serif;
     background-color: var(--color-white-main);
-    color: var(--color-grey-main); 
-    /* outline: 2px solid tomato; */
+    color: var(--color-grey-main);
 }
 
 .header {
@@ -53,7 +53,6 @@ body {
     padding-right: 15px;
     padding-left: 15px;
     margin: 0 auto;
-    /* outline: 2px solid tomato; */
 }
 
 .header-container {
@@ -125,6 +124,7 @@ text-decoration: underline var(--color-blue-accent);
 .nav-list:hover,
 .nav-list:focus {
     color: var(--color-blue-main);
+    text-decoration: underline var(--color-blue-accent);
 }
 
 .current {
@@ -145,6 +145,7 @@ text-decoration: underline var(--color-blue-accent);
 .nav-link:hover,
 .nav-link:focus {
     color: var(--color-blue-main);
+    text-decoration: underline var(--color-blue-accent);
 }
 
 .section {
@@ -194,6 +195,7 @@ text-decoration: underline var(--color-blue-accent);
     background: var(--color-blue-accent);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    text-decoration: underline var(--color-blue-accent);
 }
 
 .visually-hidden {
@@ -215,7 +217,7 @@ text-decoration: underline var(--color-blue-accent);
 }
 
 .benefits-item {
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100%-90px)\4);
 }
 
 .benefits-title {
@@ -244,7 +246,7 @@ text-decoration: underline var(--color-blue-accent);
 }
 
 .what-do-we-do-img {
-    flex-basis: calc((100%-60px)/3);
+    flex-basis: calc((100%-60px)\3);
 }
 
 .what-do-we-do-h{
@@ -279,7 +281,7 @@ text-decoration: underline var(--color-blue-accent);
     background: var(--color-white-main);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100%-90px)\4);
     max-width: 270px;
 }
 
@@ -365,6 +367,14 @@ color: var(--color-white-main);
     padding-bottom: 60px;
 }
 
+.filter-btn-list {
+    display: flex;
+    margin-bottom: 34px;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 34px;
+}
+
 .portfolio-filter-btn {
     font-family: inherit;
     font-weight: 500;
@@ -376,6 +386,8 @@ color: var(--color-white-main);
     background-color: var(--color-grey-our-team);
     border-color: transparent;
     border-radius: 4px;
+    flex-basis: calc((100%-32)\5);
+    padding: 6px 23px;
 }
 
 .portfolio-filter-btn:hover,
@@ -384,10 +396,28 @@ color: var(--color-white-main);
     background-color: var(--color-blue-main);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+    text-decoration: underline var(--color-blue-accent);
+}
+
+.filter-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .portfolio-filter-box {
     background: var(--color-white-main);
+    flex-basis: calc((100%-60px)\3);
+}
+
+.filter-part {
+    padding: 20px 24px;
+    border: 1px solid var(--color-grey-portfolio-border);
+}
+
+.filter-part:hover,
+.filter-part:focus {
+    text-decoration: underline var(--color-blue-accent);
 }
 
 .portfolio-filter-h {
